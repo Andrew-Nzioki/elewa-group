@@ -6,11 +6,7 @@ type CardProps = {
 };
 
 const ContentCard: React.FC<CardProps> = ({ children, className }) => {
-  return (
-    <div className={`rounded bg-slate-200 shadow-md ${className}`}>
-      {children}
-    </div>
-  );
+  return <div className={`${className}`}>{children}</div>;
 };
 
 export default ContentCard;
