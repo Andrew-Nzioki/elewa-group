@@ -1,8 +1,9 @@
+import React from "react";
+
 function App() {
+
   return (
-    <div>
-      <h1>Elewa group</h1>
-    </div>
+    <h1>Elewa</h1>
   );
 }
 
