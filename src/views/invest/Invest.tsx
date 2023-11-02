@@ -11,9 +11,9 @@ const InvestPage = () => {
         titleClassName="text-[#FFFFFF]"
         visionClassName="text-[#FFFFFF]"
         divClassName="divclass"
-        className="w-screen bg-slate-400 h-[880px] header-background-image"
+        className="w-screen bg-slate-400 h-[880px] header-background-image flex flex-col justify-center items-start p-10 gap-4"
       />
-      <ContentCard className="h-[400px] w-screen">
+      <ContentCard className="h-[400px] w-[100%]">
         <h1>Content card</h1>
       </ContentCard>
     </>
