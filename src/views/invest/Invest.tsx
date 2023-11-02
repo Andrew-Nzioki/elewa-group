@@ -15,9 +15,7 @@ const InvestPage = () => {
         divClassName="divclass"
         className="w-screen h-[880px]  flex flex-col justify-center items-start p-10 gap-4"
       ></Header>
-      <ContentCard className="h-[400px] w-[100%] bg-[#F4F4F4]">
-        <h1>Content card</h1>
-      </ContentCard>
+  
     </div>
   );
 };
