@@ -3,6 +3,9 @@ import React from "react";
 type HeaderProps = {
   title: string;
   vision: string;
+  titleClassName?: string;
+  visionClassName?: string;
+  divClassName?: string;
   className?: string;
   children?: React.ReactNode;
 };
@@ -10,14 +13,17 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({
   title,
   vision,
+  titleClassName,
+  visionClassName,
+  divClassName,
   className,
   children,
 }) => {
   return (
     <div className={`${className}`}>
-      <h1 className={`${className}`}>{title}</h1>
-      <p className={`${className}`}>{vision}</p>
-      <div className={`${className}`}>{children}</div>
+      <h2 className={`${titleClassName}`}>{title}</h2>
+      <h1 className={`${visionClassName}`}>{vision}</h1>
+      <div className={`${divClassName}`}>{children}</div>
     </div>
   );
 };
