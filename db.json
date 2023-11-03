@@ -26,5 +26,14 @@
       "id": 6,
       "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380443/elewa-group-website/client-logos/ms-adc_y96dms.jpg"
     }
+    
+  ],
+  "team":[
+    {"id":1,"name":""}
+  ],
+  "management":[
+    {"id":1,"name":"Jente","role":"Founder","linkedin":"url"},
+    {"id":2,"name":"Peter","role":"chairman","linkedin":"url"},
+    {"id":3,"name":"Ken","role":"chairman","linkedin":"url"}
   ]
 }
