@@ -3,7 +3,7 @@ import Header from "../../components/Layout/Header/Header";
 import Navbar from "../../components/Layout/Navbar/Navbar";
 import ContentCard from "../../components/UI/Containers/Content";
 import "./about.css";
-import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <>
@@ -124,8 +124,11 @@ const About = () => {
           </p>
         </div>
         <ul className="flex flex-row">
-          <li>
-            <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png" alt="p" />
+          <li className="bor">
+            <img
+              src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png"
+              alt="p"
+            />
             <h2>Cooperative</h2>
             <p>
               One for all ,all for one! We have a cooperative and open mindset.
@@ -133,6 +136,38 @@ const About = () => {
             </p>
           </li>
         </ul>
+      </ContentCard>
+
+      <ContentCard className="p-28 mx-auto bg-[#ececec] rounded-b-lg">
+        <div className=" flex flex-row flex-grow gap-12 pl-48">
+          <div className="min-w-[500px] ">
+            <img
+              src="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_400/v1675690301/elewa-group-website/Images/IMG_0764_twyo3k.png"
+              alt="team"
+            />
+          </div>
+
+          <div>
+            <h1 className="pb-12 pt-12">How to get there</h1>
+            <p>
+              Based in the heart of Westlands, Nairobi, Kenya, we are easily
+              accessible from all parts of the city.
+            </p>
+            <p>
+              Not in town? Teams, Meets or Zoom are our second name. Book an
+              appointment today via{" "}
+              <a href="contact@elewa.ke">contact@elewa.ke!</a>
+            </p>
+            <div className="pt-12">
+              <button className="bg-slate-900 w-[200px] rounded-2xl text-white p-2">
+                Get directions
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+            <h1>Our history</h1>
+        </div>
       </ContentCard>
     </>
   );
