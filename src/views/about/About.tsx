@@ -3,6 +3,7 @@ import Header from "../../components/Layout/Header/Header";
 import Navbar from "../../components/Layout/Navbar/Navbar";
 import ContentCard from "../../components/UI/Containers/Content";
 import "./about.css";
+import Footer from "../../components/Layout/Footer/Footer";
 
 const About = () => {
   return (
@@ -189,6 +190,8 @@ const About = () => {
           </ul>
         </div>
       </ContentCard>
+
+      <Footer/>
     </>
   );
 };
