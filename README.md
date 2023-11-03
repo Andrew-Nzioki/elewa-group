@@ -3,6 +3,14 @@
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm run server`
+Runs the json server backend on port [5000]
+Open `endpoints for the projects`
+[http://localhost:5000/management]
+[http://localhost:5000/headers]
+[http://localhost:5000/team]
+[http://localhost:5000/companies]
+
 
 ### `npm start`
 
