@@ -1,4 +1,30 @@
 {
   "invest": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "headers": [{ "id": 1, "title": "some title", "content": "some content" }]
+  "headers": [{ "id": 1, "title": "some title", "content": "some content" }],
+  "companies": [
+    {
+      "id": 1,
+      "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380405/elewa-group-website/client-logos/2017-GIZ-Logo_htdnpa.png"
+    },
+    {
+      "id": 2,
+      "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380406/elewa-group-website/client-logos/wwf-4-logo-png-transparent_tbkfcq.png"
+    },
+    {
+      "id": 3,
+      "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380405/elewa-group-website/client-logos/it_volk_black_logo_image_iowrws.png"
+    },
+    {
+      "id": 4,
+      "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380405/elewa-group-website/client-logos/Enabel-logo_afiel7.png"
+    },
+    {
+      "id": 5,
+      "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380406/elewa-group-website/client-logos/syndicyourself_logfo_qiqrex.png"
+    },
+    {
+      "id": 6,
+      "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380443/elewa-group-website/client-logos/ms-adc_y96dms.jpg"
+    }
+  ]
 }
