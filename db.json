@@ -61,9 +61,55 @@
     },
     {
       "id": 5,
-      "title":"Transparency",
+      "title": "Transparency",
       "icon": "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/Transparancy_fqal8q.png",
       "value": "Transparency, an open mind, and an open heart hold our organization together. We commit to and promote full transparency to ourselves, our stakeholders, and our beneficiaries. We furthermore invest heavily in open-source and open-data projects, as true potential lies everywhere. Not just within."
     }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "year": 2015,
+      "event": "elewa is born",
+      "description": "From a Belgian garage and Embakasi apartment, Elewa first sees the light as a purely SaaS-based EdTech analyzing KCSE past papers."
+    },
+    {
+      "id": 2,
+      "year": 2017,
+      "event": "Kickstarting Elewa Education",
+      "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
+    },
+  
+    {
+      "id": 3,
+      "year": 2017,
+      "event": "Kickstarting Elewa Education",
+      "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
+    },
+    {
+      "id": 4,
+      "year": 2017,
+      "event": "Kickstarting Elewa Education",
+      "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
+    },
+    {
+      "id": 5,
+      "year": 2017,
+      "event": "Kickstarting Elewa Education",
+      "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
+    },
+    {
+      "id": 6,
+      "year": 2017,
+      "event": "Kickstarting Elewa Education",
+      "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
+    },
+    {
+      "id": 7,
+      "year": 2017,
+      "event": "Kickstarting Elewa Education",
+      "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
+    }
+  
   ]
 }

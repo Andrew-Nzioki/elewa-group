@@ -1,10 +1,19 @@
 .header-background-image {
-    background-image: url("https://res.cloudinary.com/dyl3rncv3/image/upload/v1679650530/elewa-team_digqu3.jpg");
+    /* background-image: url("https://res.cloudinary.com/dyl3rncv3/image/upload/v1679650530/elewa-team_digqu3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    background-color: ghostwhite;
+    background-position: center; */
+    width: 90%;
+    position: relative;
+    /* background-color: ghostwhite;
+    filter: brightness(50%); */
    
   }
-  
+ 
+  bg-image{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100vh;
+    height: 100vh;
+  }

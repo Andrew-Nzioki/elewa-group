@@ -6,7 +6,7 @@ import "./socialImpact.css";
 const SocialImpact = () => {
   return (
     <>
-      <div className="header-background-image">
+      <div className="social-background-image">
         <Navbar />
         <Header
           title="Trade, not aid"

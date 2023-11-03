@@ -7,8 +7,13 @@ import "./about.css";
 const About = () => {
   return (
     <>
-      <div className="header-background-image text-white font-semibold shadow">
+      <div className=" text-white font-semibold shadow">
         <Navbar />
+        <img
+          className="bg-image"
+          src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1679650530/elewa-team_digqu3.jpg"
+          alt="background"
+        />
         <Header
           title="Trade, not aid"
           vision="Southern innovations addressing global problems"
@@ -139,12 +144,19 @@ const About = () => {
       </ContentCard>
 
       <ContentCard className="p-28 mx-auto bg-[#ececec] rounded-b-lg">
-        <div className=" flex flex-row flex-grow gap-12 pl-48">
-          <div className="min-w-[500px] ">
-            <img
-              src="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_400/v1675690301/elewa-group-website/Images/IMG_0764_twyo3k.png"
-              alt="team"
-            />
+        <div className=" flex flex-row flex-grow gap-12 pl-28">
+          <div className="min-w-[500px] rounded-lg ">
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d127636.9245107146!2d36.794227602448785!3d-1.3842936002067676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-1.4707856!2d36.9433582!4m5!1s0x182f1a6bf7445dc1%3A0x940b62a3c8efde4c!2sMoringa%20School%2C%20Ngong%20Lane%2C%20Nairobi!3m2!1d-1.3004862!2d36.7846067!5e0!3m2!1en!2ske!4v1698995209533!5m2!1en!2ske"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen // Remove the empty string
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Embed"
+            ></iframe>
           </div>
 
           <div>
@@ -166,7 +178,19 @@ const About = () => {
           </div>
         </div>
         <div>
-            <h1>Our history</h1>
+          <h1 className="text-4xl font-medium">Our history</h1>
+
+          <ul>
+            <li>
+              <h1>2015</h1>
+              <p>Elewa is born</p>
+              <p>
+                From a Belgian garage and Embakasi apartment, Elewa first sees
+                the light as a purely SaaS-based EdTech analyzing KCSE past
+                papers.
+              </p>
+            </li>
+          </ul>
         </div>
       </ContentCard>
     </>

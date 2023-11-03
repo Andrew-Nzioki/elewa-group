@@ -6,7 +6,7 @@ import "./Invest.css";
 const InvestPage = () => {
   return (
     <>
-      <div className="header-background-image">
+      <div className="invest-background-image">
         <Navbar />
         <Header
           title="Trade, not aid"
