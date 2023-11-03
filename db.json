@@ -1,0 +1,4 @@
+{
+  "invest": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "headers": [{ "id": 1, "title": "some title", "content": "some content" }]
+}
