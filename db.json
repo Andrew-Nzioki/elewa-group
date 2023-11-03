@@ -26,14 +26,44 @@
       "id": 6,
       "image": "https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380443/elewa-group-website/client-logos/ms-adc_y96dms.jpg"
     }
-    
   ],
-  "team":[
-    {"id":1,"name":""}
+  "team": [{ "id": 1, "name": "" }],
+  "management": [
+    { "id": 1, "name": "Jente", "role": "Founder", "linkedin": "url" },
+    { "id": 2, "name": "Peter", "role": "chairman", "linkedin": "url" },
+    { "id": 3, "name": "Ken", "role": "chairman", "linkedin": "url" }
   ],
-  "management":[
-    {"id":1,"name":"Jente","role":"Founder","linkedin":"url"},
-    {"id":2,"name":"Peter","role":"chairman","linkedin":"url"},
-    {"id":3,"name":"Ken","role":"chairman","linkedin":"url"}
+  "caltureValues": [
+    {
+      "id": 1,
+      "icon": "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png",
+
+      "title": "Cooperative",
+      "value": "One for all ,all for one! We have a cooperative and open mindset. If one of us grows, all will follow."
+    },
+    {
+      "id": 3,
+      "icon": "https://static.thenounproject.com/png/1721983-200.png",
+      "title": "Detail",
+      "value": "We are a 'Centre of Excellence' as per global standards. We only compete with ourselves, but find in the global standard our only worthy rival."
+    },
+    {
+      "id": 2,
+      "title": "Ownership",
+      "icon": "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/ownership_yno4a2.png",
+      "value": "We are dependable and honour our commitments. When things don't go as planned, as they sometimes do, we communicate early to avoid catastrophe."
+    },
+    {
+      "id": 4,
+      "title": "Empathy",
+      "icon": "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png",
+      "value": "We are nothing without people, and people have different contexts and needs. Our organization acts as a safe haven and shield for those in need."
+    },
+    {
+      "id": 5,
+      "title":"Transparency",
+      "icon": "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/Transparancy_fqal8q.png",
+      "value": "Transparency, an open mind, and an open heart hold our organization together. We commit to and promote full transparency to ourselves, our stakeholders, and our beneficiaries. We furthermore invest heavily in open-source and open-data projects, as true potential lies everywhere. Not just within."
+    }
   ]
 }

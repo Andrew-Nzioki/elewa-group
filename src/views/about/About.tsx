@@ -84,7 +84,9 @@ const About = () => {
             />
             <h4>Kennedy Adhola</h4>
             <p>Operations & Partnerships</p>
-            <a href="https://www.linkedin.com/in/kennedy-adhola-97570535/">in</a>
+            <a href="https://www.linkedin.com/in/kennedy-adhola-97570535/">
+              in
+            </a>
           </li>
           <li>
             <img
@@ -98,24 +100,40 @@ const About = () => {
 
           <li>
             <div>
-            <img
-              src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/peter-elewa_zuzovx.jpg"
-              alt="ceo"
-            />
+              <img
+                src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/peter-elewa_zuzovx.jpg"
+                alt="ceo"
+              />
             </div>
             <h4>Peter Rosseel</h4>
             <p>Executive Chairman</p>
-            <a href="https://www.linkedin.com/in/peter-reinartz-1b4452ab/">in</a>
+            <a href="https://www.linkedin.com/in/peter-reinartz-1b4452ab/">
+              in
+            </a>
           </li>
         </ul>
       </ContentCard>
 
-      
-      
-
-      
-
-  
+      <ContentCard>
+        <div className="flex flex-col gap-4 justify-start items-start p-6">
+          <h1 className="text-5xl font-medium">Our Culture & Values</h1>
+          <p>
+            Our culture, CODE-(T), defines us. It protects and guides us to
+            success. It keeps our team and management accountable to itself, its
+            objective, and our long-term mission.
+          </p>
+        </div>
+        <ul className="flex flex-row">
+          <li>
+            <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png" alt="p" />
+            <h2>Cooperative</h2>
+            <p>
+              One for all ,all for one! We have a cooperative and open mindset.
+              If one of us grows, all will follow.
+            </p>
+          </li>
+        </ul>
+      </ContentCard>
     </>
   );
 };
