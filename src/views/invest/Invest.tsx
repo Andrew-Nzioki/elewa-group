@@ -3,6 +3,7 @@ import Header from "../../components/Layout/Header/Header";
 import Navbar from "../../components/Layout/Navbar/Navbar";
 import ContentCard from "../../components/UI/Containers/Content";
 import "./Invest.css";
+import Footer from "../../components/Layout/Footer/Footer";
 const InvestPage = () => {
   return (
     <>
@@ -128,6 +129,7 @@ const InvestPage = () => {
       <ContentCard className="p-28 flex flex-row justify-center items-center">
         <p>Become part of our mission.<br/> And start investing</p>
       </ContentCard>
+      <Footer/>
     </>
   );
 };

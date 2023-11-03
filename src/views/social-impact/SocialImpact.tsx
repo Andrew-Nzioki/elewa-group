@@ -3,6 +3,7 @@ import Header from "../../components/Layout/Header/Header";
 import Navbar from "../../components/Layout/Navbar/Navbar";
 import ContentCard from "../../components/UI/Containers/Content";
 import "./socialImpact.css";
+import Footer from "../../components/Layout/Footer/Footer";
 const SocialImpact = () => {
   return (
     <>
@@ -143,6 +144,8 @@ const SocialImpact = () => {
           <h1>Become part of our mission and join elewa.</h1>
         </div>
       </ContentCard>
+
+      <Footer/>
     </>
   );
 };
