@@ -7,13 +7,9 @@ import "./about.css";
 const About = () => {
   return (
     <>
-      <div className=" text-white font-semibold shadow">
+      <div className=" header-background-image text-white font-semibold shadow">
         <Navbar />
-        <img
-          className="bg-image"
-          src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1679650530/elewa-team_digqu3.jpg"
-          alt="background"
-        />
+      
         <Header
           title="Trade, not aid"
           vision="Southern innovations addressing global problems"
