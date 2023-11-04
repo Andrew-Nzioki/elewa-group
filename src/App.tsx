@@ -21,6 +21,7 @@ function App() {
   const [history,setHistory]=useState([])
   const [team,setTeam]=useState([])
   const [figures,setFigures]=useState([])
+  
   useEffect(() => {
     const fetchData = async () => {
       const companiesData = await fetchCompanies();

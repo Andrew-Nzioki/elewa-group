@@ -17,6 +17,7 @@ interface InvestProps {
   figures:figures[]
 }
 const InvestPage : React.FC<InvestProps>= ({figures}) => {
+ 
   return (
     <>
       <div className="invest-background-image">
@@ -52,11 +53,12 @@ const InvestPage : React.FC<InvestProps>= ({figures}) => {
 
       <ContentCard className="p-6">
         <h1 className="text-center text-xl font-semibold">Key Figures</h1>
-        <ul className="p-8">
-          <Stat
-            value="1.3M"
-            description="Approx. number of Kenyan talents reaching the age of 18 in 2022"
-          />
+        <ul className="p-2 grid grid-cols-4 gap-2">
+
+          {figures.map(item=>
+            <Stat key={item.id} count={item.count} description={item.description}/>
+            )}
+        
         </ul>
       </ContentCard>
 
