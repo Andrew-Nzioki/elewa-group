@@ -1,5 +1,4 @@
 import React from 'react';
-
 const CustomSVG: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="250.37" height="39.089" viewBox="0 0 250.37 39.089">

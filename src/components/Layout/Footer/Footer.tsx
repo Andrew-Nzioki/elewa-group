@@ -36,7 +36,6 @@ const Footer = () => {
         <li>
           <CustomSVG/>
         </li>
-
         <li>
           <div>
             <span>Facebook</span>
