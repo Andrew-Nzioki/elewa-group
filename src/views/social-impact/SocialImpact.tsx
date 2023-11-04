@@ -4,7 +4,18 @@ import Navbar from "../../components/Layout/Navbar/Navbar";
 import ContentCard from "../../components/UI/Containers/Content";
 import "./socialImpact.css";
 import Footer from "../../components/Layout/Footer/Footer";
-const SocialImpact = () => {
+
+interface company {
+  id: number;
+  image: string;
+  // Add other properties and their types as needed
+}
+
+interface SocialImpactProps {
+  companies: company[]; // Define the type of 'companies' as an array of Company objects
+  // You can include more properties here if needed
+}
+const SocialImpact: React.FC<SocialImpactProps> = ({ companies }) => {
   return (
     <>
       <div className="social-background-image">
@@ -126,18 +137,12 @@ const SocialImpact = () => {
           <h1 className="font-semibold">Some of our impact projects</h1>
         </div>
         <ul className="flex justify-start  gap-4">
-          <li className="h-8 w-16">
-            <img
-              src="https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380405/elewa-group-website/client-logos/hoplit-logo_nsryy7.webp"
-              alt="company"
-            />
-          </li>
-          <li className="h-8 w-16">
-            <img
-              src="https://res.cloudinary.com/dyl3rncv3/image/upload/e_grayscale/v1681380412/elewa-group-website/client-logos/Spotlights_7_pplnvm.jpg"
-              alt="text"
-            />
-          </li>
+          {companies.map((item) => (
+            <li className="h-[50px] w-[200px]">
+              <img src={`${item.image}`} alt="companies" />
+            </li>
+          ))}
+          
         </ul>
 
         <div className="flex justify-center items-center">
@@ -145,7 +150,7 @@ const SocialImpact = () => {
         </div>
       </ContentCard>
 
-      <Footer/>
+      <Footer />
     </>
   );
 };

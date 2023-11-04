@@ -1,5 +1,6 @@
 import React from "react";
-
+import AddressComponent from "./AddressComponent";
+import SocialComponent from "./SocialComponent";
 const Footer = () => {
   return (
     <div className="bg-black text-white h-[600px] rounded-t-lg pb-8 p-6 flex justify-between flex-col">
