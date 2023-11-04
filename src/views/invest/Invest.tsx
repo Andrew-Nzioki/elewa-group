@@ -7,17 +7,17 @@ import Footer from "../../components/Layout/Footer/Footer";
 import CompanySection from "./CompanySection";
 import CompanySectionInverted from "./CompanySectionInverted";
 import Stat from "./Stat";
+import DifferentView from "./DifferentView";
 
-interface figures{
-  id:number;
-  count:number;
-  description:string
+interface figures {
+  id: number;
+  count: number;
+  description: string;
 }
 interface InvestProps {
-  figures:figures[]
+  figures: figures[];
 }
-const InvestPage : React.FC<InvestProps>= ({figures}) => {
- 
+const InvestPage: React.FC<InvestProps> = ({ figures }) => {
   return (
     <>
       <div className="invest-background-image">
@@ -32,33 +32,24 @@ const InvestPage : React.FC<InvestProps>= ({figures}) => {
         ></Header>
       </div>
       <ContentCard className="flex flex-col p-16  justify-center gap-12">
-        <div>
-          <h1 className="text-4xl pb-4 font-medium">
-            How we see it differently
-          </h1>
-          <p>
-            The global South is rapidly catching up with the "developed" world.
-            It's time for you to get to know the rapid development, innovation
-            and drive going on in this part of the world (East-Africa, South
-            Asia and beyond).
-          </p>
-        </div>
-        <div>
-          <img
-            src="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,w_1280/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png"
-            alt="mask group"
-          />
-        </div>
+        <DifferentView
+          title="How we see it differently"
+          description="The global South is rapidly catching up with the 'developed' world. It's time for you to get to know the rapid development, innovation and drive going on in this part of the world (East-Africa, South Asia and beyond)."
+          imageUrl="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,w_1280/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png"
+          imageAlt="mask group"
+        />
       </ContentCard>
 
       <ContentCard className="p-6">
         <h1 className="text-center text-xl font-semibold">Key Figures</h1>
         <ul className="p-2 grid grid-cols-4 gap-2">
-
-          {figures.map(item=>
-            <Stat key={item.id} count={item.count} description={item.description}/>
-            )}
-        
+          {figures.map((item) => (
+            <Stat
+              key={item.id}
+              count={item.count}
+              description={item.description}
+            />
+          ))}
         </ul>
       </ContentCard>
 
