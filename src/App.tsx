@@ -9,7 +9,8 @@ import {
   fetchManagement,
   fetchStats,
   fetchTeam,
-  fetchHistory
+  fetchHistory,
+  fetchFigures
 } from "./services/services";
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
   const [stats, setStats] = useState([]);
   const [history,setHistory]=useState([])
   const [team,setTeam]=useState([])
-
+  const [figures,setFigures]=useState([])
+  
   useEffect(() => {
     const fetchData = async () => {
       const companiesData = await fetchCompanies();
@@ -28,6 +30,7 @@ function App() {
       const statsData = await fetchStats();
       const historyData=await fetchHistory()
       const teamData=await fetchTeam()
+      const figuresData=await fetchFigures()
 
       setCompanies(companiesData);
       setCultures(cultureData);
@@ -35,6 +38,7 @@ function App() {
       setStats(statsData);
       setHistory(historyData)
       setTeam(teamData)
+      setFigures(figuresData)
     };
 
     fetchData();
@@ -43,7 +47,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<InvestPage />} />
+        <Route path="/" element={<InvestPage figures={figures}/>} />
         <Route
           path="/social-impact"
           element={<SocialImpact companies={companies} stats={stats} />}

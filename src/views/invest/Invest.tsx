@@ -4,7 +4,20 @@ import Navbar from "../../components/Layout/Navbar/Navbar";
 import ContentCard from "../../components/UI/Containers/Content";
 import "./Invest.css";
 import Footer from "../../components/Layout/Footer/Footer";
-const InvestPage = () => {
+import CompanySection from "./CompanySection";
+import CompanySectionInverted from "./CompanySectionInverted";
+import Stat from "./Stat";
+import DifferentView from "./DifferentView";
+
+interface figures {
+  id: number;
+  count: number;
+  description: string;
+}
+interface InvestProps {
+  figures: figures[];
+}
+const InvestPage: React.FC<InvestProps> = ({ figures }) => {
   return (
     <>
       <div className="invest-background-image">
@@ -19,117 +32,62 @@ const InvestPage = () => {
         ></Header>
       </div>
       <ContentCard className="flex flex-col p-16  justify-center gap-12">
-        <div>
-          <h1 className="text-4xl pb-4 font-medium">
-            How we see it differently
-          </h1>
-          <p>
-            The global South is rapidly catching up with the "developed" world.
-            It's time for you to get to know the rapid development, innovation
-            and drive going on in this part of the world (East-Africa, South
-            Asia and beyond).
-          </p>
-        </div>
-        <div>
-          <img
-            src="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,w_1280/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png"
-            alt="mask group"
-          />
-        </div>
+        <DifferentView
+          title="How we see it differently"
+          description="The global South is rapidly catching up with the 'developed' world. It's time for you to get to know the rapid development, innovation and drive going on in this part of the world (East-Africa, South Asia and beyond)."
+          imageUrl="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,w_1280/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png"
+          imageAlt="mask group"
+        />
       </ContentCard>
 
       <ContentCard className="p-6">
         <h1 className="text-center text-xl font-semibold">Key Figures</h1>
-        <ul className="p-8">
-          <li className="border-gray-200 shadow-md rounded-md w-[265px] h-[200px] flex flex-col justify-center gap-0 items-center p-8">
-            <h1 className="font-semibold">1.3M</h1>
-            <p>
-              Approx. number of Kenyan talents reaching the age of 18 in 2022
-            </p>
-          </li>
+        <ul className="p-2 grid grid-cols-4 gap-2">
+          {figures.map((item) => (
+            <Stat
+              key={item.id}
+              count={item.count}
+              description={item.description}
+            />
+          ))}
         </ul>
       </ContentCard>
 
       <ContentCard className="p-28 mx-auto">
-        <div className=" flex flex-row flex-grow gap-12">
-          <div className="min-w-[500px]">
-            <img
-              src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690303/elewa-group-website/Images/IMG_6523_vabpyo.png"
-              alt="team"
-            />
-          </div>
-
-          <div>
-            <h1 className="pb-12 pt-12">
-              Elewa NV, a multi-stakeholder cooperation
-            </h1>
-            <p>
-              At the heart of Elewa lies the structure Elewa NV. Based in
-              Brussels, Belgium, Elewa NV is a private holding company which
-              controls the assets of all Elewa activities. Elewa NV is owned and
-              controlled by Elewa's founder, a small community of investors
-              which share in the vision of Elewa and Elewa employees based
-              throughout the activities of the group.
-            </p>
-          </div>
-        </div>
+        <CompanySectionInverted
+          imageSrc="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690303/elewa-group-website/Images/IMG_6523_vabpyo.png"
+          imageAlt="team"
+          title="Elewa NV, a multi-stakeholder cooperation"
+          description="At the heart of Elewa lies the structure Elewa NV. Based in Brussels, Belgium, Elewa NV is a private holding company which controls the assets of all Elewa activities. Elewa NV is owned and controlled by Elewa's founder, a small community of investors which share in the vision of Elewa and Elewa employees based throughout the activities of the group."
+        />
       </ContentCard>
       <ContentCard className="p-28 mx-auto">
-        <div className=" flex flex-row flex-grow gap-12">
-          <div>
-            <h1 className="pb-12 pt-12">
-              Elewa NV, a multi-stakeholder cooperation
-            </h1>
-            <p>
-              At the heart of Elewa lies the structure Elewa NV. Based in
-              Brussels, Belgium, Elewa NV is a private holding company which
-              controls the assets of all Elewa activities. Elewa NV is owned and
-              controlled by Elewa's founder, a small community of investors
-              which share in the vision of Elewa and Elewa employees based
-              throughout the activities of the group.
-            </p>
-          </div>
-          <div className="min-w-[500px]">
-            <img
-              src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690303/elewa-group-website/Images/IMG_6523_vabpyo.png"
-              alt="team"
-            />
-          </div>
-        </div>
+        <CompanySection
+          title="Elewa NV, a multi-stakeholder cooperation"
+          description="At the heart of Elewa lies the structure Elewa NV. Based in Brussels, Belgium, Elewa NV is a private holding company which controls the assets of all Elewa activities. Elewa NV is owned and controlled by Elewa's founder, a small community of investors which share in the vision of Elewa and Elewa employees based throughout the activities of the group."
+          imageSrc="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690303/elewa-group-website/Images/IMG_6523_vabpyo.png"
+          imageAlt="team"
+          buttonText=""
+        />
       </ContentCard>
 
       <ContentCard className="p-28 mx-auto">
-        <div className=" flex flex-row flex-grow gap-12">
-          <div className="min-w-[500px]">
-            <img
-              src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690303/elewa-group-website/Images/IMG_6523_vabpyo.png"
-              alt="team"
-            />
-          </div>
-
-          <div>
-            <h1 className="pb-12 pt-12">
-              Elewa NV, a multi-stakeholder cooperation
-            </h1>
-            <p>
-              At the heart of Elewa lies the structure Elewa NV. Based in
-              Brussels, Belgium, Elewa NV is a private holding company which
-              controls the assets of all Elewa activities. Elewa NV is owned and
-              controlled by Elewa's founder, a small community of investors
-              which share in the vision of Elewa and Elewa employees based
-              throughout the activities of the group.
-            </p>
-            <button className="bg-slate-900 w-[200px] rounded-lg text-white">
-              Join the waiting list
-            </button>
-          </div>
-        </div>
+        <CompanySection
+          imageSrc="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690303/elewa-group-website/Images/IMG_6523_vabpyo.png"
+          imageAlt="team"
+          title="Elewa NV, a multi-stakeholder cooperation"
+          description="At the heart of Elewa lies the structure Elewa NV. Based in Brussels, Belgium, Elewa NV is a private holding company which controls the assets of all Elewa activities. Elewa NV is owned and controlled by Elewa's founder, a small community of investors which share in the vision of Elewa and Elewa employees based throughout the activities of the group."
+          buttonText="Join the waiting list"
+        />
       </ContentCard>
 
       <ContentCard className="p-28 flex flex-row justify-center items-center">
-        <p>Become part of our mission.<br/> And start investing</p>
+        <p>
+          Become part of our mission.
+          <br /> And start investing
+        </p>
       </ContentCard>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -79,7 +79,7 @@
       "event": "Kickstarting Elewa Education",
       "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
     },
-  
+
     {
       "id": 3,
       "year": 2017,
@@ -110,12 +110,49 @@
       "event": "Kickstarting Elewa Education",
       "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
     }
-  
   ],
-  "stats":[
-    {"id":1,"count":733,"description":"People trained"},
-    {"id":1,"count":733,"description":"Careers launched"},
-    {"id":1,"count":200,"description":"Projects finished"},
-    {"id":1,"count":56,"description":"Investors"}
+  "stats": [
+    { "id": 1, "count": 733, "description": "People trained" },
+    { "id": 1, "count": 733, "description": "Careers launched" },
+    { "id": 1, "count": 200, "description": "Projects finished" },
+    { "id": 1, "count": 56, "description": "Investors" }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "description": "Approx. number of Kenyan talents reaching the age of 18 in 2022",
+      "count": 1.3
+    },
+    {
+      "id": 2,
+      "description": "number of East-Africans(EAC) reaching the age of 18 in 2022",
+      "count": 5
+    },
+    {
+      "id": 3,
+      "description": "Democratic Republic of Congo joins the East African Community",
+      "count": 2022
+    }, {
+      "id": 5,
+      "description": "The number of unfilled IT vacancies in the US and EU markets",
+      "count": 10
+    }, {
+      "id": 6,
+      "description": "Number of technical vacancies by 2030",
+      "count": 1.3
+    }, {
+      "id": 7,
+      "description": "Africa holds the worlds largest workforce",
+      "count": 2050
+    }, {
+      "id": 8,
+      "description": "Startup funding raised by African startups in 2022",
+      "count": 4.6
+    },
+    {
+      "id": 9,
+      "description": "Increase in startup funding for companies with HQ in Kenya",
+      "count": 310
+    }
   ]
 }
