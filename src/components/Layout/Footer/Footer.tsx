@@ -1,6 +1,7 @@
 import React from "react";
 import AddressComponent from "./AddressComponent";
 import SocialComponent from "./SocialComponent";
+import CustomSVG from "../../UI/Logo/CustomLogo";
 const Footer = () => {
   return (
     <div className="bg-black text-white h-[600px] rounded-t-lg pb-8 p-6 flex justify-between flex-col">
@@ -32,7 +33,9 @@ const Footer = () => {
       </ul>
 
       <ul className="flex justify-between items-center ">
-        <li>Icon</li>
+        <li>
+          <CustomSVG/>
+        </li>
 
         <li>
           <div>
