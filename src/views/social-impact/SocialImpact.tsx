@@ -8,14 +8,19 @@ import Footer from "../../components/Layout/Footer/Footer";
 interface company {
   id: number;
   image: string;
-  // Add other properties and their types as needed
+
+}
+interface stats{
+  id:number,
+  count:number,
+  description:string,
+}
+interface SocialImpactProps {
+  companies: company[]; 
+  stats:stats[],
 }
 
-interface SocialImpactProps {
-  companies: company[]; // Define the type of 'companies' as an array of Company objects
-  // You can include more properties here if needed
-}
-const SocialImpact: React.FC<SocialImpactProps> = ({ companies }) => {
+const SocialImpact: React.FC<SocialImpactProps> = ({ companies,stats }) => {
   return (
     <>
       <div className="social-background-image">
@@ -31,11 +36,12 @@ const SocialImpact: React.FC<SocialImpactProps> = ({ companies }) => {
       </div>
 
       <ContentCard className="p-28 mx-auto bg-black text-white">
-        <ul className="p-8 font-semibold">
-          <li>
-            <h4>733+</h4>
-            <p>People trained</p>
-          </li>
+        <ul className="p-8 font-medium text-2xl text-white flex flex-row gap-2 justify-between items-center">
+         {stats.map(item=> <li key={item.id}>
+          <h1>Item</h1>
+            <h4>{item.count}</h4>
+            <p>{item.description}</p>
+          </li>)}
         </ul>
         <div className=" flex flex-row flex-grow gap-12">
           <div className="min-w-[500px]">

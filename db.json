@@ -111,5 +111,11 @@
       "description": "With an initial pre-seed investment of friends and family and a masters thesis on the subject, Elewa pilots it's innovative 'Four Pillars' model in 5 secondary schools across Kenya. Learning outcomes go through the roof in only one term."
     }
   
+  ],
+  "stats":[
+    {"id":1,"count":733,"description":"People trained"},
+    {"id":1,"count":733,"description":"Careers launched"},
+    {"id":1,"count":200,"description":"Projects finished"},
+    {"id":1,"count":56,"description":"Investors"}
   ]
 }
