@@ -2,7 +2,8 @@ const cultureUrl = "http://localhost:5000/caltureValues";
 const managementUrl = "http://localhost:5000/management";
 const statsUrl = "http://localhost:5000/stats";
 const companiesUrl = "http://localhost:5000/companies";
-
+const TeamUrl = "http://localhost:5000/companies";
+const HistoryUrl = "http://localhost:5000/history";
 export const fetchCompanies = async () => {
   try {
     const response = await fetch(companiesUrl);
@@ -45,6 +46,32 @@ export const fetchManagement = async () => {
 export const fetchStats = async () => {
   try {
     const response = await fetch(statsUrl);
+    if (!response.ok) {
+      throw new Error("Failed to fetch");
+    }
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching stats:", error);
+    return [];
+  }
+};
+
+export const fetchTeam = async () => {
+  try {
+    const response = await fetch(TeamUrl);
+    if (!response.ok) {
+      throw new Error("Failed to fetch");
+    }
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching stats:", error);
+    return [];
+  }
+};
+
+export const fetchHistory = async () => {
+  try {
+    const response = await fetch(HistoryUrl);
     if (!response.ok) {
       throw new Error("Failed to fetch");
     }
