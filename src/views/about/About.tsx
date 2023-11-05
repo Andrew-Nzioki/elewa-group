@@ -1,7 +1,8 @@
+// The main about page view that uses other components to bring the final picture
 import React from "react";
 import Header from "../../components/Layout/Header/Header";
 import Navbar from "../../components/Layout/Navbar/Navbar";
-import ContentCard from "../../components/UI/Containers/Content";
+import ContentCard from "../../components/Shared/Containers/Content";
 import "./about.css";
 import Footer from "../../components/Layout/Footer/Footer";
 import TeamMember from "./TeamMember";
@@ -9,6 +10,55 @@ import CultureItem from "./CultureItem";
 import Offer from "./Offer";
 import HistoryItem from "./HistoryItem";
 
+/**
+ * Represents a management structure.
+ * @typedef {Object} management
+ * @property {number} id - The ID of the management structure.
+ * @property {string} name - The name of the member.
+ * @property {string} role - The role of the member.
+ * @property {string} linkedin - The LinkedIn URL of the member.
+ */
+
+/**
+ * Represents a team structure.
+ * @typedef {Object} team
+ * @property {number} id - The ID of the team member.
+ */
+
+/**
+ * Represents a history item.
+ * @typedef {Object} history
+ * @property {number} id - The ID of the history item.
+ * @property {string} year - The year of the historical event.
+ * @property {string} event - The event of the history item.
+ * @property {string} description - The description of the history item.
+ */
+
+/**
+ * Represents a culture item.
+ * @typedef {Object} culture
+ * @property {number} id - The ID of the culture item.
+ * @property {string} icon - The icon representing the culture item.
+ * @property {string} title - The title of the culture item.
+ * @property {string} value - The value of the culture item.
+ */
+
+/**
+ * Props for the About component.
+ * @typedef {Object} AboutProps
+ * @property {management[]} management - The management details.
+ * @property {culture[]} culture - The culture details.
+ * @property {history[]} history - The history details.
+ * @property {team[]} team - The team details.
+ */
+
+/**
+ * The main About page view that uses other components to create the final picture.
+ * @param {AboutProps} props - The props for the About component.
+ * @returns {JSX.Element} The About page view.
+ */
+
+//interfaces to ensure type safety
 interface management {
   id: number;
   name: string;

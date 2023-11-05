@@ -1,5 +1,18 @@
 import React from 'react';
 
+/**
+ * Props for the Social Initiatives Card component.
+ * @typedef {Object} SocialInitiativesCardProps
+ * @property {string} imageSrc - The image source for the card.
+ * @property {string} title - The title of the card.
+ * @property {string} description - The description for the card.
+ */
+
+/**
+ * Social Initiatives Card Component.
+ * @param {SocialInitiativesCardProps} props - The props for the component.
+ * @returns {JSX.Element} - Rendered component.
+ */
 interface SocialInitiativesCardProps {
   imageSrc: string;
   title: string;

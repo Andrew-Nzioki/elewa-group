@@ -1,5 +1,9 @@
+/* The elewa group website header is identical accross pages 
+and this component is reused to maintain consistency of the structure*/
 import React from "react";
 
+
+//defining props that the component accepts
 type HeaderProps = {
   title: string;
   vision: string;

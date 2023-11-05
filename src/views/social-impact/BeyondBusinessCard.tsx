@@ -1,5 +1,17 @@
 import React from 'react';
+/**
+ * Props for the BeyondBusinessCard component.
+ * @typedef {Object} BeyondBusinessCardProps
+ * @property {string} imageSrc - The image source URL for the BeyondBusinessCard.
+ * @property {string} title - The title of the BeyondBusinessCard.
+ * @property {string} description - The description for the BeyondBusinessCard.
+ */
 
+/**
+ * BeyondBusinessCard Component.
+ * @param {BeyondBusinessCardProps} props - The props for the component.
+ * @returns {JSX.Element} - Rendered component.
+ */
 interface BeyondBusinessCardProps {
   imageSrc: string;
   title: string;

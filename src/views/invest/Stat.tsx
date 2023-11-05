@@ -1,5 +1,17 @@
 import React from 'react';
 
+
+/**
+ * @typedef {object} StatProps - Props for the Stat component.
+ * @property {number} count - The count to display.
+ * @property {string} description - The description to display.
+ */
+
+/**
+ * Stat component displays count and a description.
+ * @param {StatProps} props - The props for the Stat component.
+ * @returns {JSX.Element} React component.
+ */
 interface StatProps {
   count: number;
   description: string;

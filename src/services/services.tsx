@@ -1,10 +1,26 @@
+// API Endpoint URLs
+
+/** @type {string} - Endpoint to fetch culture values */
 const cultureUrl = "http://localhost:5000/caltureValues";
+
+/** @type {string} - Endpoint to fetch management data */
 const managementUrl = "http://localhost:5000/management";
+
+/** @type {string} - Endpoint to fetch statistics */
 const statsUrl = "http://localhost:5000/stats";
-const companiesUrl = "http://localhost:5000/companies";
+
+/** @type {string} - Endpoint to fetch company data */
+const companiesUrl: string = "http://localhost:5000/companies";
+
+/** @type {string} - Endpoint to fetch team data (Note: same as companiesUrl) */
 const TeamUrl = "http://localhost:5000/companies";
+
+/** @type {string} - Endpoint to fetch historical data */
 const HistoryUrl = "http://localhost:5000/history";
-const figuresUrl= "http://localhost:5000/figures";
+
+/** @type {string} - Endpoint to fetch figures/statistics */
+const figuresUrl = "http://localhost:5000/figures";
+// Functions to fetch data from respective API endpoints
 export const fetchCompanies = async () => {
   try {
     const response = await fetch(companiesUrl);
@@ -17,7 +33,10 @@ export const fetchCompanies = async () => {
     return [];
   }
 };
-
+/**
+ * Fetches data from the culture values endpoint
+ * @returns {Promise<Object[]>} - A promise that resolves to an array of culture values
+ */
 export const fetchCultures = async () => {
   try {
     const response = await fetch(cultureUrl);
@@ -31,6 +50,10 @@ export const fetchCultures = async () => {
   }
 };
 
+/**
+ * Fetches data from the management endpoint
+ * @returns {Promise<Object[]>} - A promise that resolves to an array of management data
+ */
 export const fetchManagement = async () => {
   try {
     const response = await fetch(managementUrl);
@@ -43,7 +66,10 @@ export const fetchManagement = async () => {
     return [];
   }
 };
-
+/**
+ * Fetches data from the statistics endpoint
+ * @returns {Promise<Object[]>} - A promise that resolves to an array of statistics
+ */
 export const fetchStats = async () => {
   try {
     const response = await fetch(statsUrl);
@@ -57,6 +83,10 @@ export const fetchStats = async () => {
   }
 };
 
+/**
+ * Fetches data from the team endpoint
+ * @returns {Promise<Object[]>} - A promise that resolves to an array of team data
+ */
 export const fetchTeam = async () => {
   try {
     const response = await fetch(TeamUrl);
@@ -70,6 +100,10 @@ export const fetchTeam = async () => {
   }
 };
 
+/**
+ * Fetches data from the history endpoint
+ * @returns {Promise<Object[]>} - A promise that resolves to an array of historical data
+ */
 export const fetchHistory = async () => {
   try {
     const response = await fetch(HistoryUrl);
@@ -82,7 +116,11 @@ export const fetchHistory = async () => {
     return [];
   }
 };
-
+//fetch data related to figures and other statistcs
+/**
+ * Fetches data from the figures endpoint
+ * @returns {Promise<Object[]>} - A promise that resolves to an array of figures/statistics
+ */
 export const fetchFigures = async () => {
   try {
     const response = await fetch(figuresUrl);
