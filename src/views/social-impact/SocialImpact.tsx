@@ -1,13 +1,41 @@
 import React from "react";
 import Header from "../../components/Layout/Header/Header";
 import Navbar from "../../components/Layout/Navbar/Navbar";
-import ContentCard from "../../components/UI/Containers/Content";
+import ContentCard from "../../components/Shared/Containers/Content";
 import "./socialImpact.css";
 import Footer from "../../components/Layout/Footer/Footer";
 import InfoCard from "./InforCard";
 import BeyondBusinessCard from "./BeyondBusinessCard";
 import SocialInitiativesCard from "./SocialInitiativesCard";
 
+
+/**
+ * Interface for the company object.
+ * @typedef {Object} company
+ * @property {number} id - The company ID.
+ * @property {string} image - The image URL of the company.
+ */
+
+/**
+ * Interface for the stats object.
+ * @typedef {Object} stats
+ * @property {number} id - The stat ID.
+ * @property {number} count - The stat count.
+ * @property {string} description - The stat description.
+ */
+
+/**
+ * Props for the Social Impact component.
+ * @typedef {Object} SocialImpactProps
+ * @property {company[]} companies - The array of companies.
+ * @property {stats[]} stats - The array of statistics.
+ */
+
+/**
+ * Social Impact Component.
+ * @param {SocialImpactProps} props - The props for the component.
+ * @returns {JSX.Element} - Rendered component.
+ */
 interface company {
   id: number;
   image: string;

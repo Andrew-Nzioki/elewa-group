@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-
+//Reusable button to be reused accross the project that can be customized using tailwind classes
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
  
   className?: string;

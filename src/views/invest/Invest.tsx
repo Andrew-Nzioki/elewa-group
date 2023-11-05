@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Layout/Header/Header";
 import Navbar from "../../components/Layout/Navbar/Navbar";
-import ContentCard from "../../components/UI/Containers/Content";
+import ContentCard from "../../components/Shared/Containers/Content";
 import "./Invest.css";
 import Footer from "../../components/Layout/Footer/Footer";
 import CompanySection from "./CompanySection";
@@ -9,6 +9,23 @@ import CompanySectionInverted from "./CompanySectionInverted";
 import Stat from "./Stat";
 import DifferentView from "./DifferentView";
 
+/**
+ * @typedef {Object} figures
+ * @property {number} id - The ID of the figure.
+ * @property {number} count - The count related to the figure.
+ * @property {string} description - The description of the figure.
+ */
+
+/**
+ * @typedef {Object} InvestProps
+ * @property {figures[]} figures - Array of figures.
+ */
+
+/**
+ * Represents the InvestPage component.
+ * @param {InvestProps} props - The properties for the InvestPage component.
+ * @returns {JSX.Element} JSX element representing the InvestPage.
+ */
 interface figures {
   id: number;
   count: number;

@@ -1,0 +1,1 @@
+State management through context api or Redux tool kit functionality would be implimented in this folder for the project

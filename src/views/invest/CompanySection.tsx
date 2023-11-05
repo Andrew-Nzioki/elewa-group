@@ -1,5 +1,19 @@
 import React from 'react';
 
+/**
+ * @typedef {Object} CompanySectionProps
+ * @property {string} imageSrc - The URL of the image.
+ * @property {string} imageAlt - The alternative text for the image.
+ * @property {string} title - The title of the CompanySection.
+ * @property {string} description - The description of the CompanySection.
+ * @property {string} buttonText - The text for the button.
+ */
+
+/**
+ * CompanySection component displays information about a company.
+ * @param {CompanySectionProps} props - The props for the CompanySection component.
+ * @returns {JSX.Element} CompanySection component UI.
+ */
 interface CompanySectionProps {
   imageSrc: string;
   imageAlt: string;
