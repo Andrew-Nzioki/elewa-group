@@ -1,16 +1,14 @@
 # Running Elewa-Group application
-
+# step 1
+- `git clone https://github.com/Andrew-Nzioki/elewa-group.git`
+# step 2
+- `cd elewa-group`
+# step 3
 ## Available Scripts
 
 In the project directory, you can run:
 ### `npm run server`
 Runs the json server backend on port [5000]
-Open `endpoints for the projects`
-[http://localhost:5000/management]
-[http://localhost:5000/headers]
-[http://localhost:5000/team]
-[http://localhost:5000/companies]
-
 
 ### `npm start`
 
@@ -19,11 +17,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 

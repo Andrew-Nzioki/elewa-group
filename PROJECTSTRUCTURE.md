@@ -2,18 +2,17 @@
 📦 elewa-group
  ┣ 📂 node_modules
  ┣ 📄 package.json
+ ┣ 📄 db.json
  ┣ 📄 package-lock.json
  ┣ 📄 PROJECTSTRUCTURE.md
  ┣ 📂 public
- ┃ ┗ ... (Other public files)
+ ┃ ┗ ... (public files)
  ┣ 📄 README.md
  ┗ 📂 src
     ┣ 📂 assets
-    ┃ ┗ ... (asset files)
+    ┃ ┗ ... (asset files like logo)
     ┣ 📂 components
-    ┃ ┗ ... (component files)
-    ┣ 📂 hooks
-    ┃ ┗ ... (hook files)
+    ┃ ┗ ... (component files folders)
     ┣ 📄 App.js
     ┣ 📄 index.js
     ┣ 📂 services
