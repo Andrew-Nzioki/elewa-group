@@ -133,3 +133,26 @@ export const fetchFigures = async () => {
     return [];
   }
 };
+
+
+// Best practices for fetching data
+/** @type {string} - Base URL for API requests */
+const baseURL = "http://localhost:5000/";
+
+/**
+ * Fetches data from the specified API endpoint
+ * @param {string} endpoint - The API endpoint to fetch data from
+ * @returns {Promise<Object[]>} - A promise that resolves to an array of fetched data
+ */
+export const fetchDataFromAnyEndpoint = async (endpoint: string) => {
+  try {
+    const response = await fetch(baseURL + endpoint);
+    if (!response.ok) {
+      throw new Error("Failed to fetch");
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(`Error fetching data from ${endpoint}:`, error);
+    return [];
+  }
+};

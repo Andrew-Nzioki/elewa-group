@@ -10,7 +10,8 @@ import {
   fetchStats,
   fetchTeam,
   fetchHistory,
-  fetchFigures
+  fetchFigures,
+  fetchDataFromAnyEndpoint
 } from "./services/services";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       const historyData=await fetchHistory()
       const teamData=await fetchTeam()
       const figuresData=await fetchFigures()
+      const companiesDataV2 = fetchDataFromAnyEndpoint('companies');//alternative pattern following SOLID
 
       setCompanies(companiesData);
       setCultures(cultureData);
